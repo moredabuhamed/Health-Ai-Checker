@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Symptom Checker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-[#0d0d1a] text-white min-h-screen flex flex-col items-center p-10">
+
+  <!-- Loader -->
+  <div id="loaderOverlay">
+    <div class="spinner"></div>
+    <p class="text-cyan-400 text-xl font-semibold">Analyzing symptoms...</p>
+  </div>
+
+  <!-- Modal -->
+  <div id="modalOverlay">
+    <div id="modalContent">
+      <button onclick="closeModal()" class="absolute top-2 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+      <h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+      <p id="modalReason" class="text-gray-300"></p>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400 text-center mb-10">
+    Medical Symptom Checker
+  </h1>
+
+  <!-- Search -->
+  <div class="w-full max-w-2xl flex items-center bg-white rounded-full shadow-lg overflow-hidden mb-12">
+    <span class="px-4 text-gray-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11A6 6 0 1111 5a6 6 0 016 6z"/>
+      </svg>
+    </span>
+    <input id="symptomsInput" type="text" placeholder="Enter your symptoms (e.g. fever, cough, sore throat)"
+           class="flex-1 p-4 text-gray-800 focus:outline-none text-base" required>
+    <button onclick="checkSymptoms()"
+            class="bg-gradient-to-r from-indigo-500 to-cyan-400 text-white px-8 py-4 font-semibold hover:from-pink-500 hover:to-indigo-500 transition">
+      Check
+    </button>
+  </div>
+
+  <!-- Results -->
+  <div id="resultsSection" class="hidden w-full max-w-6xl">
+    <h2 class="text-2xl font-semibold mb-6 text-pink-400">Possible Conditions</h2>
+    <div id="cardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
