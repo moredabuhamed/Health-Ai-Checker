@@ -35,3 +35,15 @@ Health-Ai-Checker/
 ├── README.md
 └── .gitignore
 ```
+---
+## 🛠 Tech Stack
+
+Backend: Java 17, Spring Boot 3.5.5 (Web, WebFlux, Thymeleaf)
+
+Frontend: html,Tailwind CSS, Vanilla JS
+
+AI: Ollama (DeepSeek R1 model)
+
+Build Tool: Maven
+
+---
