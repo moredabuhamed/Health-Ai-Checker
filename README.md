@@ -47,3 +47,14 @@ AI: Ollama (DeepSeek R1 model)
 Build Tool: Maven
 
 ---
+## 🖼️ Screenshot
+
+### 🏠 Main Interface
+Main interface of the Health-AI-Checker application
+<img width="1916" height="640" alt="image" src="https://github.com/user-attachments/assets/cfb64fd0-959d-4076-bd79-277c39743ed9" />
+### ⏳ Loading State
+Loading screen while the system analyzes symptoms
+<img width="1131" height="607" alt="image" src="https://github.com/user-attachments/assets/17dee52d-fd6f-432a-bb32-28e7e23e3db5" />
+
+
+
