@@ -55,6 +55,11 @@ Main interface of the Health-AI-Checker application
 ### ⏳ Loading State
 Loading screen while the system analyzes symptoms
 <img width="1131" height="607" alt="image" src="https://github.com/user-attachments/assets/17dee52d-fd6f-432a-bb32-28e7e23e3db5" />
-
+### ✅ Results Page
+AI-generated possible conditions based on entered symptoms  
+<img width="1406" height="685" alt="image" src="https://github.com/user-attachments/assets/209063e1-3878-4554-986a-ab8b578e489b" />
+### 🔍 Condition Details
+Detailed explanation for a selected condition
+<img width="1292" height="713" alt="image" src="https://github.com/user-attachments/assets/35340914-9c91-48b8-9336-1fa14ef3d623" />
 
 
